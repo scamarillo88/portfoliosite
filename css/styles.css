@@ -1,0 +1,111 @@
+/*
+Colors used:
+Background (whipped cream): #fdf9f4;
+Text/ headings (epresso): #5c4630;
+Accent/ Buttons(lemon zest): #f7d488;
+Hover state/ Icons (Mint Leaf): #a0db5d;
+Subtle Highlights (Berry Glaze): #d7a9b9;
+*/
+
+/* Typography */  
+body{
+   font-family: "DM Serif Display", serif; 
+   font-weight:400;
+   font-style: normal;
+   line-height: 1.3;
+   font-size: 18px;
+h1 {
+  font-size: 1.3em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul {
+    padding-left: 20x;
+    margin-bottom: 1em;
+}
+li {
+    margin-bottom: 0.5em;
+}
+}
+ body{
+    background-color: #fdf9f4;
+ }
+ h1, h2, h3, p, ul, li {
+    color: #5c4630;
+ }
+
+ body{
+ img {
+  width: 100%;
+}}
+
+a {
+  color: #5c4630;
+  text-decoration: underline; /* underlining */
+}
+
+a:visited { /* visited link */
+  color: #5c4630;
+}
+a:hover {
+  color: #a0db5d;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: #f7d488;
+}
+a:hover,
+a:focus {
+  color:#a0db5d;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+/* Botton KEEP AT VERY END OF CSS */  
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #d7a9b9;
+  color: #5c4630; /* needed to override the default link color */
+  font-size: 16;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border-bottom: 2px solid #d7a9b9; /* width of the border, type, color */
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+.button:hover {
+  opacity: 0.85; /* Reduces the opacity of the button to 85% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #d7a9b9;
+  text-transform: uppercase;
+  border: 2px solid #d7a9b9;
+  text-decoration: none;
+}
+.button.contact:hover {
+  background-color: #d7a9b9;
+  color: #ffffff;
+  text-decoration: none;
+}
