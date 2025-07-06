@@ -82,6 +82,21 @@ a:focus {
 
 
 
+/* Footer */ 
+footer{
+.footer-icon {
+  height: auto;
+  width: 10%;
+  margin-right: 24px;
+}
+.footer-icon2 {
+  height: auto;
+  width: 15%;
+  margin-right: 24px;
+}
+
+}
+
 
 
 
