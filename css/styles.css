@@ -8,18 +8,34 @@ Subtle Highlights (Berry Glaze): #d7a9b9;
 */
 
 /* Typography */  
+float-text img{
+  float: left;
+  margin: 0 0.625em 0.625em 0
+}
+* {
+  box-sizing: border-box;
+}
+#hero {
+  background-color: #ffe4c4;
+}
+#hero {
+  background-color: #f7d488;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
 body{
    font-family: "DM Serif Display", serif; 
    font-weight:400;
    font-style: normal;
    line-height: 1.3;
-   font-size: 18px;
+   font-size: 16px;
 h1 {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 h3 {
@@ -58,7 +74,31 @@ li {
   width: 100%;
 }
  }
-
+/* Spacing */  
+ header {
+  background-color:#f7d488;
+  padding: 0em 0em .625em 0em;
+ }
+header {
+  background-color: #f7d488;
+  text-align: center;
+  padding: 10px 0;
+}
+header{
+  position: fixed;
+  width: 100%;
+}
+.main-image {
+  float: left;
+  height: auto;
+  width: 30%;
+  margin: 0 1em 1em 0;
+  border-radius: 1.25em;/*rounded corners */
+}
+.logo {
+  max-width: 250px;
+  margin: 1.25em;
+}
 a {
   color: #5c4630;
   text-decoration: underline; /* underlining */
@@ -83,6 +123,12 @@ a:focus {
 
 
 /* Footer */ 
+footer {
+  background-color:#f7d488;
+  padding: 0.625em;
+  text-align: center;
+
+}
 footer{
 .footer-icon {
   height: auto;
@@ -97,19 +143,84 @@ footer{
 
 }
 
+/* Layout styling */
+.container {
+  padding: 0 15px;
+  margin: auto;
+  max-width: 1200px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row { 
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+ text-decoration: none;
+ color: #5c4630;
+ font-weight: 700;
+ text-transform: uppercase;
+ padding: 0 15px;
+}
 
+nav ul li a :hover {
+  opacity: 0.85; /* Reduces the opacity of the button to 85% */
+  text-decoration: none;
+  display:inline-block;
+  width: 100%;
+}
 
+ nav ul li a.contact {
+  background-color: transparent;
+  color: #d7a9b9;
+  text-transform: uppercase;
+  border: 2px solid #d7a9b9;
+  text-decoration: none;
+  display:inline-block;
+  width: 100%;
+}
+nav ul li a.contact:hover {
+  background-color: #d7a9b9;
+  color: #ffffff;
+  text-decoration: none;
+  display:inline-block;
+  width: 100%;
+}
 
+/* Typography styling */
+#hero h1, 
+#hero h2, 
+#hero p {
+  text-align: center; /* Centers text */
+}
+main {
+  padding-top: 133px;
+}
+.projects h2 {
+  text-align: center;
+}
 /* Botton KEEP AT VERY END OF CSS */  
+.resume-button-wrapper{
+  clear: both;
+  margin-top: 1em;
+}
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #d7a9b9;
   color: #5c4630; /* needed to override the default link color */
   font-size: 16;
   font-weight: 400;
-  padding: 10px 20px;
-  border-radius: 3px;
-  border-bottom: 2px solid #d7a9b9; /* width of the border, type, color */
+  padding: 0.625em 1.25em;
+  margin: 1.25em 1.25em 1.25 0;
+  border-radius: 1.25em;/*rounded corners */
   transition: 0.2s opacity;
   text-decoration: none;
 }
@@ -117,13 +228,13 @@ footer{
   opacity: 0.85; /* Reduces the opacity of the button to 85% */
   text-decoration: none;
 }
-
 .button.contact {
   background-color: transparent;
-  color: #d7a9b9;
+  color: #5c4630;
   text-transform: uppercase;
-  border: 2px solid #d7a9b9;
+  border: 2px solid #5c4630;
   text-decoration: none;
+  margin-bottom: 1.25em;
 }
 .button.contact:hover {
   background-color: #d7a9b9;
