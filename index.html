@@ -19,16 +19,18 @@
 <body>
    <!-- For the Header -->
    <header>
+  <div class="container">
       <!-- OPEN HEADER SECTION FOR LOGO AND MENU -->
          <!-- OPEN INNER CONTAINER-->
           <div>
-          <h2>Sabrina Camarillo</h2>
+           <img class="logo" src="img/logo2x.jpg" alt="logo">
+           </div>
          <nav>
             <!-- OPEN NAVIGATION SECTION -->
              <ul>
             <li><a href="index.html">Work</a></li><!--menu link-->
             <li><a href="about.html">About</a></li><!--menu link-->
-            <li><a href="#Get In Touch">Get In Touch</a></li><!--menu link-->
+            <li><a href="#get-in-touch">Get In Touch</a></li><!--menu link-->
              </ul>
          </nav>
          </div>
@@ -38,7 +40,7 @@
           <div>
           <header id="hero">
          <h1>Hi, my name is Sabrina Camarillo</h1>
-         <h2>I'm a UI designer from Bend, Oregon</h2>
+         <h2>I'm a UI designer in Oregon</h2>
          <p>I am a UI/UX designer with a background in food and hospitality, where I worked as a pastry chef and general
             manager. That experience sharpened my creativity, problem-solving, and ability to deliver high-quality
             results under pressure. I now specialize in UX research, responsive web design, and wireframing with tools
@@ -52,58 +54,46 @@
 
 <!-- Work Section -->
  <main>
- <div>
- <section id="work" class="projects">
-<!-- open row that holds (2) columns for project -->
- <div>
- <!-- open first column (used for image)-->
- <h2>My Projects</h2>
-<div>
-<picture>
-<source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)"> 
-<img src="./img/thryve/2x/thryvemain.jpg" alt="Thryve App" >
-</picture>
-</div>
-<!-- end first column-->
- <div>
-   <!-- open second column (used for text)-->
-<h3> Thryve</h3>
-<!-- heading for the project -->
-<p> Thryve is a mobile-first financial wellness app focused on intuitive expense tracking and goal-based savings. I applied user-centered design principles, wireframing, and mobile UI/UX techniques to create a clean, approachable experience that encourages better money habits.</p>
-<a href= "thryve.html" class="button">View Project</a>
- </div>
-<!--end second column-->
-</div>
-<!-- end row that holds (2) columns for project-->
-<!-- open row that holds (2) columns for project-->
-<!-- open first colum (used for image) --><div>
-<picture>
-<source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)"> 
-<img src="./img/scientifically sweet/2x/ssmain.jpg" alt="Scientifically Sweet" >
-</picture>
-</div>
-<div>
-<picture>
+   <section id="work" class="projects">
+       <div class="container">
+          <h2>My Projects</h2>
 
-</picture>
-</div>
-<!-- end first column-->
-<div>
-<!-- open second column (used for text)-->
-<h3> Scientifically Sweet</h3>
-<!-- heading for the project -->
-<p> Scientifically Sweet is a responsive web app that empowers users to discover, customize, and save baking recipes through an intuitive and playful interface. I applied user research, low- and high-fidelity wireframing, preference testing, and responsive UI design using Figma to craft a user-centric baking experience.</p>
-<a href= "scientificallysweet.html" class="button">View Project</a>
-</div>
-<!--end second column-->
-</div>
-<!-- end row that holds (2) columns for project-->
-<div>
-<!-- open row that holds (2) columns for project-->
-</div>
-<!-- open first colum (used for image) -->
-</main>
-</div>
+          <!-- project 1: thryve -->
+          <div class="row">
+             <!--column 1:image-->
+             <div> 
+                <picture>
+                <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)"> 
+                img src="./img/thryve/2x/thryvemain.jpg" alt="Thryve App" >
+             </picture>
+          </div>
+          <!--column 2 text-->
+          <div>
+             <h3> Thryve</h3>
+             <p> Thryve is a mobile-first financial wellness app focused on intuitive expense tracking and goal-based savings. I applied user-centered design principles, wireframing, and mobile UI/UX techniques to create a clean, approachable experience that encourages better money habits.</p>
+             <a href= "thryve.html" class="button">View Project</a>
+          </div>
+       </div>
+
+       <!--project 2 scientifically sweet-->
+       <div class="row">
+          <!--column 1 image-->
+          <div>  
+             <picture>
+                <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)"> 
+                <img src="./img/scientifically sweet/2x/ssmain.jpg" alt="Scientifically Sweet" >
+             </picture>
+          </div>
+          <!--column 2 text-->
+          <div>
+             <h3> Scientifically Sweet</h3>
+             <p> Scientifically Sweet is a responsive web app that empowers users to discover, customize, and save baking recipes through an intuitive and playful interface. I applied user research, low- and high-fidelity wireframing, preference testing, and responsive UI design using Figma to craft a user-centric baking experience.</p>
+             <a href= "scientificallysweet.html" class="button">View Project</a>
+          </div>
+       </div>
+    </div>
+    </section>
+ </main>
 <!-- END PROJECTS -->
 
 <!-- Get In Touch Section-->
