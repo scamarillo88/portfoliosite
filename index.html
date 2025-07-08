@@ -19,56 +19,53 @@
 <body>
    <!-- For the Header -->
    <header>
-  <div class="container">
-      <!-- OPEN HEADER SECTION FOR LOGO AND MENU -->
-         <!-- OPEN INNER CONTAINER-->
-          <div>
-           <img class="logo" src="img/logo2x.jpg" alt="logo">
-           </div>
+    <div class="topnav" id="mytopnav">
+      <img class="logo" src="img/logo1x.png" alt="logo">
          <nav>
-            <!-- OPEN NAVIGATION SECTION -->
-             <ul>
-            <li><a href="index.html">Work</a></li><!--menu link-->
-            <li><a href="about.html">About</a></li><!--menu link-->
-            <li><a href="#get-in-touch">Get In Touch</a></li><!--menu link-->
-             </ul>
+            <ul>
+               <li class="nav-item"><a href="index.html">Work</a></li><!--menu link-->
+               <li class="nav-item"></li><li><a href="about.html">About</a></li><!--menu link-->
+               <li class="nav-item"></li><li><a href="#get-in-touch">Get In Touch</a></li><!--menu link-->
+            </ul>
          </nav><!-- End Navigation-->
-            <!-- END INNER CONTAINER -->
-         <!-- End Navigation-->
-
-         <!-- Hero Section -->
-          <div id="hero">
-             <div class="container">
-         <h1>Hi, my name is Sabrina Camarillo</h1>
-         <h2>I'm a UI designer in Oregon</h2>
-         <p>I am a UI/UX designer with a background in food and hospitality, where I worked as a pastry chef and general
+     </div>    <!-- END INNER CONTAINER -->
+     </div>    <!-- End Navigation-->
+   </header>
+   <main>
+<!-- Hero Section -->
+      <div id="hero">
+        <div class="container">
+          <h1>
+            Hi, my name is Sabrina Camarillo<span>
+            I'm a UI designer in Oregon</span>
+          </h1>
+           <p>I am a UI/UX designer with a background in food and hospitality, where I worked as a pastry chef and general
             manager. That experience sharpened my creativity, problem-solving, and ability to deliver high-quality
             results under pressure. I now specialize in UX research, responsive web design, and wireframing with tools
             like Figma. I am passionate about creating clean, user-centered designs and excited to grow in a role where I
             can contribute and learn.</p>
-         </div>
-
-            <!-- END INNER CONTAINER -->
-         </header>
+      </div>
+        </div>
+           <!-- END INNER CONTAINER -->
 <!-- END OF HEADER -->
 
 <!-- Work Section -->
- <main>
+
    <section id="work" class="projects">
        <div class="container">
           <h2>My Projects</h2>
 
           <!-- project 1: thryve -->
           <div class="row">
-             <!--column 1:image-->
+            <div class="col-md-6">
              <div> 
-                <picture>
+               <picture>
                 <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)"> 
-                img src="./img/thryve/2x/thryvemain.jpg" alt="Thryve App" >
-             </picture>
+                   <img src="./img/thryve/2x/thryvemain.jpg" alt="Thryve App" >
+               </picture>
+           </div>
           </div>
-          <!--column 2 text-->
-          <div>
+          <div class="col-md-6">
              <h3> Thryve</h3>
              <p> Thryve is a mobile-first financial wellness app focused on intuitive expense tracking and goal-based savings. I applied user-centered design principles, wireframing, and mobile UI/UX techniques to create a clean, approachable experience that encourages better money habits.</p>
              <a href= "thryve.html" class="button">View Project</a>
@@ -77,48 +74,48 @@
 
        <!--project 2 scientifically sweet-->
        <div class="row">
-          <!--column 1 image-->
-          <div>  
+          <div class="col-md-6"> 
              <picture>
-                <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)"> 
-                <img src="./img/scientifically sweet/2x/ssmain.jpg" alt="Scientifically Sweet" >
+               <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)"> 
+               <img src="./img/scientifically sweet/2x/ssmain.jpg" alt="Scientifically Sweet" >
              </picture>
           </div>
-          <!--column 2 text-->
-          <div>
+          <div class="col-md-6">
              <h3> Scientifically Sweet</h3>
              <p> Scientifically Sweet is a responsive web app that empowers users to discover, customize, and save baking recipes through an intuitive and playful interface. I applied user research, low- and high-fidelity wireframing, preference testing, and responsive UI design using Figma to craft a user-centric baking experience.</p>
              <a href= "scientificallysweet.html" class="button">View Project</a>
           </div>
-       </div>
-    </div>
+          </div>
+          </div>
     </section>
  </main>
 <!-- END PROJECTS -->
 
 <!-- Get In Touch Section-->
-<footer>
-  <div class="container">
+
  <footer id="get-in-touch" class="contact">
- <h2> Get in Touch</h2>
- <p>Let's connect- whether you have a project in mind or just want to chat design over coffee, I'd love to hear from you.<p>
-   <span>Call:<a href="tel:503-867-4439"> 503-867-4439</span></a>
-<div>
-<a href="mailto:sabrina.camarillo88@gmail.com" class="button contact">Email Me</a>
-</div>
-<div>
+  <div class="container">
+    <h2> Get in Touch</h2>
+    <p>Let's connect- whether you have a project in mind or just want to chat design over coffee, I'd love to hear from you.</p>
+    <span>Call:<a href="tel:503-867-4439"> 503-867-4439</span></a>
+  <div>
+    <a href="mailto:sabrina.camarillo88@gmail.com" class="button contact">Email Me</a>
+  </div>
+  <div>
    <!-- Social Media Layout and Placeholders-->
-    <a href="https://www.linkedin.com/in/sabrina-camarillo/" target="_blank">
-      <img class="footer-icon" img src="img/linkedin.svg" alt="linkedin">
-</a>
+    <div class="social-icons">
+       <a href="https://www.linkedin.com/in/sabrina-camarillo/" target="_blank">
+         <img class="footer-icon" img src="img/linkedin.svg" alt="linkedin">
+       </a>
 
-<a href="https://www.behance.net/sabrinacamaril" target="_blank">
-      <img class="footer-icon" img src="img/behance.svg" alt="behance">
-      </a>
-
+       <a href="https://www.behance.net/sabrinacamaril" target="_blank">
+         <img class="footer-icon" img src="img/behance.svg" alt="behance">
+       </a>
+    </div>
       <!-- End Get In Touch-->
-
- <p>COPYRIGHT Sabrina Camarillo 2025</p>
+  <div>
+  <p>COPYRIGHT Sabrina Camarillo 2025</p>
+  </div>
 </footer>
 <!-- END FOOTER -->
 
