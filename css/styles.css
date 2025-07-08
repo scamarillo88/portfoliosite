@@ -71,12 +71,14 @@ ul {
     font-style: normal;
     line-height: 1.3;
 }
+
 li {
     margin-bottom: 0.5em;
 }
 body {
     background-color: #fdf9f4;
  }
+
 h1, h2, h3, p, ul, li {
     color: #5c4630;        
 }
@@ -91,7 +93,7 @@ img {
  /* css code for links*/
  a {
   color: #5c4630;
-  text-decoration: none; /*  no underlining */
+  text-decoration: underline; /* underlining */
 }
 
 a:hover {
@@ -254,6 +256,11 @@ nav {
   border-radius: 1.25em;/*rounded corners */
 }
 
+.baking {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 footer {
   background-color:#f7d488;
   padding: 0.625em;
@@ -292,6 +299,26 @@ footer {
   padding: 0 15px;
   margin: auto;
   max-width: 1200px;
+}
+
+.container h2 {
+  text-decoration: underline;
+  color:#d7a9b9
+  }
+.container h3{
+  margin-bottom: 0;
+}
+
+.container p{
+  margin: 4px;
+}
+
+#table-of-contents h2 {
+  text-decoration: underline;
+}
+
+#table-of-contents a {
+  text-decoration: none;
 }
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
@@ -362,6 +389,11 @@ footer {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  }
+
+
+  body{
+    font-size: 22px;
   }
   .main-image {
   width: 35%;
