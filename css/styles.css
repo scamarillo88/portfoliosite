@@ -7,29 +7,24 @@ Hover state/ Icons (Mint Leaf): #a0db5d;
 Subtle Highlights (Berry Glaze): #d7a9b9;
 */
 
-/* Typography */  
-float-text img{
-  float: left;
-  margin: 0 0.625em 0.625em 0
-}
+
 * {
   box-sizing: border-box;
 }
-#hero {
-  background-color: #ffe4c4;
+
+main {
+  padding-top: 130px;
 }
-#hero {
-  background-color: #f7d488;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-}
+
+/* Typography */ 
 body{
    font-family: "DM Serif Display", serif; 
    font-weight:400;
    font-style: normal;
    line-height: 1.3;
    font-size: 16px;
+} 
+
 h1 {
   font-size: 1.5em;
 }
@@ -49,9 +44,27 @@ p {
   font-style: normal;
 }
 
+#hero {
+  background-color: #f7d488;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+/*setting images to full with*/
+
+float-text img{
+  float: left;
+  margin: 0 0.625em 0.625em 0
+}
+
 ul {
     font-size: 18px;
-    padding-left: 20x;
+    padding-left: 20px;
     margin-bottom: 1em;
     font-family: "DM Serif Display", serif; 
     font-weight:400;
@@ -61,32 +74,174 @@ ul {
 li {
     margin-bottom: 0.5em;
 }
-}
- body{
+body {
     background-color: #fdf9f4;
  }
- h1, h2, h3, p, ul, li {
-    color: #5c4630;
+h1, h2, h3, p, ul, li {
+    color: #5c4630;        
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
  }
 
- body{
- img {
-  width: 100%;
+ /* css code for links*/
+ a {
+  color: #5c4630;
+  text-decoration: none; /*  no underlining */
 }
- }
-/* Spacing */  
+
+a:hover {
+  color: #a0db5d;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:visited { /* visited link */
+  color: #5c4630;
+}
+
+
+a:active { /* selected link */
+  color: #f7d488;
+}
+
+/*pseudo class for accesssibility*/
+a:hover
+a:focus {
+  color:#a0db5d;
+  text-decoration: underline;
+}
+
+/* button class*/ 
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #d7a9b9;
+  color: #5c4630; /* needed to override the default link color */
+  font-size: 16;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0.625em 1.25em;
+  border-radius: 1.25em;/*rounded corners */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.85; /* Reduces the opacity of the button to 85% */
+  text-decoration: none;
+}
+
+.button:active {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #5c4630;
+  text-transform: uppercase;
+  border: 2px solid #5c4630;
+  margin-top: 15px;
+}
+
+.button.contact:hover {
+  background-color: #d7a9b9;
+  color: #ffffff;
+}
+
+.button.contact:active {
+  background-color: #a0db5d ;
+  color: #ffffff;
+}
+
+/* style the <header elements*/
+
  header {
   background-color:#f7d488;
-  padding: 0em 0em .625em 0em;
- }
-header {
-  background-color: #f7d488;
-  text-align: center;
-  padding: 10px 0;
-}
-header{
-  position: fixed;
   width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #f7d488;
+  position: fixed;
+  text-align: center;
+  z-index: 10;
+ }
+
+ .logo {
+  max-width: 250px;
+  margin: 1.25em;
+  text-align: center;
+}
+
+/*navigation styling*/
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+nav > ul > li > a {
+ color: #5c4630;
+ font-weight: 700;
+ text-transform: uppercase;
+ padding: 0 15px;
+}
+
+nav > ul > li > a:visited {
+  color: #5c4630;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+   text-decoration: none;
+   color: #d7a9b9;
+}
+
+ nav > ul > li > a:active {
+  color: #5c4630;
+ }
+
+ /* style the hamburger icon */
+
+ .topnav {
+  text-align: center;
+  padding: 20px;
+  background-color: #f7d488;
+ }
+nav {
+  display: inline-block;
+  width: 100%;
+  margin-top: 4;
+}
+
+ .topnav, .topnav.responsive {
+  position:relative
+ }
+
+.topnav.responsive li  {
+  display: block;
+}
+
+.topnav.responsive nav {
+  padding: 24px 0 0;
+  text-align: center;
+}
+
+.topnav.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #ebebe4;
+}
+
+.topnav.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 .main-image {
   float: left;
@@ -95,55 +250,41 @@ header{
   margin: 0 1em 1em 0;
   border-radius: 1.25em;/*rounded corners */
 }
-.logo {
-  max-width: 250px;
-  margin: 1.25em;
-}
-a {
-  color: #5c4630;
-  text-decoration: underline; /* underlining */
-}
 
-a:visited { /* visited link */
-  color: #5c4630;
-}
-a:hover {
-  color: #a0db5d;
-  text-decoration: underline; /* Underlining when hovering over a link */
-}
-a:active { /* selected link */
-  color: #f7d488;
-}
-a:hover,
-a:focus {
-  color:#a0db5d;
-  text-decoration: underline;
-}
-
-
-
-/* Footer */ 
 footer {
   background-color:#f7d488;
   padding: 0.625em;
   text-align: center;
+ }
 
-}
-footer{
 .footer-icon {
   height: auto;
-  width: 10%;
-  margin-right: 24px;
-}
-.footer-icon2 {
-  height: auto;
-  width: 15%;
-  margin-right: 24px;
-}
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  margin: 0 10px;
+ }
 
+ .social-icons {
+  text-align: center;
+  margin-top: 26px;
+  }
+
+.footer-icon a {
+  display: inline-block;
+  width: 32px;
+  text-align: center;
+  margin: opx 5px;
 }
 
 /* Layout styling */
+
+.resume-button-wrapper{
+  clear: both;
+  margin-top: 1em;
+}
+/* layout styling*/
+
 .container {
   padding: 0 15px;
   margin: auto;
@@ -152,92 +293,65 @@ footer{
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
+
 #work .row { 
-  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
-}
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-nav ul li {
-  display: inline-block;
-}
-nav ul li a {
- text-decoration: none;
- color: #5c4630;
- font-weight: 700;
- text-transform: uppercase;
- padding: 0 15px;
+  padding-bottom: 25px; 
+  border-bottom: 1px solid #4a4a4a;
 }
 
-nav ul li a :hover {
-  opacity: 0.85; /* Reduces the opacity of the button to 85% */
-  text-decoration: none;
-  display:inline-block;
-  width: 100%;
+/* Media */
+@media only screen and (min-width: 640px) {
+  header {
+  text-align: unset;
 }
 
- nav ul li a.contact {
-  background-color: transparent;
-  color: #d7a9b9;
-  text-transform: uppercase;
-  border: 2px solid #d7a9b9;
-  text-decoration: none;
-  display:inline-block;
-  width: 100%;
-}
-nav ul li a.contact:hover {
-  background-color: #d7a9b9;
-  color: #ffffff;
-  text-decoration: none;
-  display:inline-block;
-  width: 100%;
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 }
 
-/* Typography styling */
-#hero h1, 
-#hero h2, 
-#hero p {
-  text-align: center; /* Centers text */
-}
-main {
-  padding-top: 133px;
-}
-.projects h2 {
-  text-align: center;
-}
-/* Botton KEEP AT VERY END OF CSS */  
-.resume-button-wrapper{
-  clear: both;
-  margin-top: 1em;
-}
-.button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #d7a9b9;
-  color: #5c4630; /* needed to override the default link color */
-  font-size: 16;
-  font-weight: 400;
-  padding: 0.625em 1.25em;
-  margin: 1.25em 1.25em 1.25 0;
-  border-radius: 1.25em;/*rounded corners */
-  transition: 0.2s opacity;
-  text-decoration: none;
-}
-.button:hover {
-  opacity: 0.85; /* Reduces the opacity of the button to 85% */
-  text-decoration: none;
-}
-.button.contact {
-  background-color: transparent;
-  color: #5c4630;
-  text-transform: uppercase;
-  border: 2px solid #5c4630;
-  text-decoration: none;
-  margin-bottom: 1.25em;
-}
-.button.contact:hover {
-  background-color: #d7a9b9;
-  color: #ffffff;
-  text-decoration: none;
-}
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+   main{
+    padding-top: 99px;
+   }
+   
+   body{
+    font-size: 18px;
+   }
+   
+   #hero{
+    text-align: center;
+   }
+   
+   #hero span {
+  display: block;
+   }
+   .col-md-6 {
+  width: 50%;
+   }
+  } /* Medium screen mobile.tablet*/
+
+@media only screen and (min-width: 1024px) {
+} /* large screen tablet.laptop.desktop*/
+
+@media only screen and (min-width: 1920px) {
+} /* xtra large screen */
