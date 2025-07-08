@@ -347,6 +347,33 @@ footer {
   } /* Medium screen mobile.tablet*/
 
 @media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .main-image {
+  width: 35%;
+  }
+
+  .logo {
+  max-width: 300px;
+
+  nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+   }
+
+}
 } /* large screen tablet.laptop.desktop*/
 
 @media only screen and (min-width: 1920px) {
