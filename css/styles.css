@@ -297,29 +297,11 @@ footer {
 #work .row { 
   padding-bottom: 25px; 
   border-bottom: 1px solid #4a4a4a;
-}
+} 
 
 /* Media */
 @media only screen and (min-width: 640px) {
   header {
-  text-align: unset;
-}
-
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-}
-
-
-@media only screen and (min-width: 640px) {
-  header {
     text-align: unset;
     padding: 20px 0 13px;
   }
@@ -330,7 +312,7 @@ footer {
     margin-top: 4px;
   }
 
-   main{
+   main {
     padding-top: 99px;
    }
    
@@ -343,11 +325,22 @@ footer {
    }
    
    #hero span {
-  display: block;
+    display: block;
    }
    .col-md-6 {
-  width: 50%;
+    width: 50%;
    }
+
+   [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+   }
+  .row::after {
+     content: "";
+     clear: both;
+     display: table;
+   }
+
   } /* Medium screen mobile.tablet*/
 
 @media only screen and (min-width: 1024px) {
