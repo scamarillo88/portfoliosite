@@ -340,6 +340,9 @@ footer {
      clear: both;
      display: table;
    }
+   #about-page h3 { 
+    margin-top: 0;
+   }
 
   } /* Medium screen mobile.tablet*/
 
