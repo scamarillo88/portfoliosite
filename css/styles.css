@@ -125,7 +125,9 @@ a:focus {
   text-decoration: none;
   padding: 0.625em 1.25em;
   border-radius: 1.25em;/*rounded corners */
-  transition: 0.2s opacity;
+  border-bottom: 2px solid #5c4630;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button:hover {
@@ -143,7 +145,8 @@ a:focus {
   color: #5c4630;
   text-transform: uppercase;
   border: 2px solid #5c4630;
-  margin-top: 15px;
+  margin-top: 15px; 
+  transition: background-color 0.3s ease, color, 0.3s ease;
 }
 
 .button.contact:hover {
@@ -378,3 +381,5 @@ footer {
 
 @media only screen and (min-width: 1920px) {
 } /* xtra large screen */
+
+/* animations*/
