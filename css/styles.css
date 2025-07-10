@@ -232,7 +232,11 @@ nav {
 }
 
  .topnav, .topnav.responsive {
-  position:relative
+  position:relative;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+
  }
 
 .topnav.responsive li  {
