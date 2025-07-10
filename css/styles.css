@@ -13,6 +13,10 @@ Subtle Highlights (Berry Glaze): #d7a9b9;
 }
 
 main {
+  padding-top: 75px;
+}
+
+.has-hero main {
   padding-top: 130px;
 }
 
@@ -46,7 +50,7 @@ p {
 
 #hero {
   background-color: #f7d488;
-  padding: 20px 0;
+  padding: 10px 0;
   display: inline-block;
   width: 100%;
 }
@@ -166,7 +170,7 @@ a:focus {
  header {
   background-color:#f7d488;
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
   border-bottom: 1px solid #f7d488;
   position: fixed;
   text-align: center;
@@ -174,8 +178,8 @@ a:focus {
  }
 
  .logo {
-  max-width: 250px;
-  margin: 1.25em;
+  max-width: 200px;
+  margin: 10px;
   text-align: center;
 }
 
@@ -219,7 +223,6 @@ nav > ul > li > a:focus {
 
  .topnav {
   text-align: center;
-  padding: 20px;
   background-color: #f7d488;
  }
 nav {
@@ -244,7 +247,6 @@ nav {
 }
 
 .topnav.responsive nav {
-  padding: 24px 0 0;
   text-align: center;
 }
 
@@ -342,7 +344,7 @@ footer {
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 10px 0 10px;
   }
 
   nav {
