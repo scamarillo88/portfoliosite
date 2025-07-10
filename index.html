@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/874aa7ddea.js" crossorigin="anonymous"></script><!-- link to fontsome icons -->
 <title>Sabrina Camarillo/ UI Designer/ Bend, Oregon</title>
 </head>
 <!-- END OF HEAD -->
@@ -19,6 +20,8 @@
 <body>
    <!-- For the Header -->
    <header>
+  <div class="container">
+    <div class="navtoggle" id="myNavtoggle">
     <div class="topnav" id="mytopnav">
       <img class="logo" src="img/logo1x.png" alt="logo">
       <nav>
@@ -26,10 +29,11 @@
             <li class="nav-item"><a href="index.html">Work</a></li><!--menu link-->
             <li class="nav-item"><a href="about.html">About</a></li><!--menu link-->
             <li class="nav-item"><a href="#get-in-touch">Get In Touch</a></li><!--menu link-->
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
       </nav><!-- End Navigation-->
-    </div>    <!-- END INNER CONTAINER -->
-         <!-- End Navigation-->
+   </div>    <!-- END INNER CONTAINER -->
+  </div>  <!-- End Nav toggle-->
    </header>
    <main>
     <body class="has-hero">
@@ -285,6 +289,9 @@
   </div>
 </footer>
 <!-- END FOOTER -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
