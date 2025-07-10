@@ -17,7 +17,7 @@ main {
 }
 
 .has-hero main {
-  padding-top: 130px;
+  padding-top: 100px;
 }
 
 /* Typography */ 
@@ -50,13 +50,14 @@ p {
 
 #hero {
   background-color: #f7d488;
-  padding: 10px 0;
+  padding: 0;
   display: inline-block;
   width: 100%;
 }
 
 #hero h1 {
   text-align: center;
+  margin-top: 0;
 }
 
 /*setting images to full with*/
@@ -94,6 +95,9 @@ img {
   display: block;
  }
 
+ .project-main picture {
+  margin-top: 100px;
+ }
  /* css code for links*/
  a {
   color: #5c4630;
@@ -307,7 +311,7 @@ footer {
 /* layout styling*/
 
 .container {
-  padding: 0 15px;
+  padding: 20px 15px;
   margin: auto;
   max-width: 1200px;
 }
