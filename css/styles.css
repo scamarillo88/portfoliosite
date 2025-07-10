@@ -17,7 +17,7 @@ main {
 }
 
 .has-hero main {
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
 /* Typography */ 
@@ -463,6 +463,13 @@ footer {
   margin-top: 4px;
    }
 
+   .has-hero main {
+  padding-top: 150px;
+}
+
+  .main {
+    padding-top: 170px;
+  }
 }
 
 /* large screen tablet.laptop.desktop*/
