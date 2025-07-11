@@ -19,22 +19,28 @@
 
 <body>
    <!-- For the Header -->
-   <header>
+ <header>
   <div class="container">
-    <div class="navtoggle" id="myNavtoggle">
-    <div class="topnav" id="mytopnav">
+    <div class="topnav">
       <img class="logo" src="img/logo1x.png" alt="logo">
-      <nav>
+      <div class="navtoggle" id="myNavtoggle">
+         <nav>
           <ul>
             <li class="nav-item"><a href="index.html">Work</a></li><!--menu link-->
             <li class="nav-item"><a href="about.html">About</a></li><!--menu link-->
-            <li class="nav-item"><a href="#get-in-touch" class="icon" onclick="menuToggle()"></a>Get In Touch</a></li><!--menu link-->
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            <li class="nav-item"><a href="#get-in-touch" class="icon"></a>Get In Touch</a></li><!--menu link-->
+            <!-- this is the hamburger icon -->
+            <li>
+              <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+               <i class="fas fa-bars"></i>
+              </a>
+            </li>
           </ul>
-      </nav><!-- End Navigation-->
-   </div>    <!-- END INNER CONTAINER -->
-  </div>  <!-- End Nav toggle-->
-   </header>
+         </nav><!-- End Navigation-->
+      </div>    <!-- END INNER CONTAINER -->
+    </div>  <!-- End Nav toggle-->
+  </div>
+ </header>
    <main>
     <body class="has-hero">
 <!-- Hero Section -->

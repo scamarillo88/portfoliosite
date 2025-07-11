@@ -212,7 +212,7 @@ nav > ul > li > a:hover,
 nav > ul > li > a:focus {
    text-decoration: none;
    color: #d7a9b9;
-   transform: scale(1.05s)
+   transform: scale(1.05)
 }
 
  nav > ul > li > a:active {
@@ -244,9 +244,32 @@ nav > ul > li > a:focus {
   background-color: #f7d488;
  }
 
- .navtoggle, .navtoggle.responsive {
+ .navtoggle {
   position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #f7d488;
  }
+
+ .navtoggle li:not(:last-child) {
+  display: none;
+ }
+
+ .navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #ebebe4;
+ }
+
+ .navtoggle.responsive nav {
+  text-align: center;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 
  .navtoggle li:last-child a.icon {
   position: absolute;
@@ -254,29 +277,7 @@ nav > ul > li > a:focus {
   top: 2px;
   font-size: 20px;
   padding-right: 0;
-}
-
-.topnav.responsive li  {
-  display: block;
-}
-
-.topnav.responsive nav {
-  text-align: center;
-}
-
-.topnav.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid #ebebe4;
-}
-
-.topnav.responsive li:last-child  {
-  padding: 0 0 10px;
-}
-
-.navtoggle li:not(:last-child) {
-  display: none;
-}
+ }
 
 .main-image {
   float: left;
