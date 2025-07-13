@@ -31,7 +31,7 @@
               <li class="nav-item"><a href="index.html">Work</a></li><!--menu link-->
               <li class="nav-item"><a href="about.html">About</a></li><!--menu link-->
               <li class="nav-item"><a href="#contact" class="icon">Contact</a></li><!--menu link-->
-              <li class="nav-item"><a href="files/Elevator Pitch_ resume and linkedin summary.pdf" class="Button" target="_blank">Resume</a></li><!--menu link-->
+              <li class="nav-item"><a href="files/resume.pdf" class="Button" target="_blank">Resume</a></li><!--menu link-->
               <!-- this is the hamburger icon -->
               <li>
                 <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
@@ -50,11 +50,15 @@
   <main>
     <div class="container">
       <h1>About the Designer</h1>
-      <source src="image-sabrina-camarillo">
 
       <!-- <div id="float-boxes" -->
       <div id="float-text">
-        <img class="main-image" src="img/profile.png" alt="Profile picture of Sabrina Camarillo">
+         <div class="main-image">
+            <picture>
+              <source srcset="./img/profile.png" media="(max-width:767px)">
+              <img src="./img/profile.png" alt="Sabrina Camrillo">
+            </picture>
+          </div>
         <h2>Hi, my Name is Sabrina Camarillo</h2>
         <p> I’m a UI designer with a passion for crafting intuitive, user-friendly digital experiences—and a
           professional background that’s anything but traditional. Before diving into design, I spent years as a pastry
@@ -68,7 +72,7 @@
       </div>
       <!-- Move the Button Here -->
       <div class="resume-button-wrapper">
-        <a href="files/Elevator Pitch_ resume and linkedin summary.pdf" class="Button" target="_blank">View My
+        <a href="files/resume.pdf" class="Button" target="_blank">View My
           Resume</a>
       </div>
       <h2>Skills and Tools</h2>
@@ -114,11 +118,11 @@
     <!-- Social Media Layout and Placeholders-->
     <div class="social-icons">
       <a href="https://www.linkedin.com/in/sabrina-camarillo/" target="_blank">
-        <img class="footer-icon" img src="img/linkedin.svg" alt="linkedin">
+        <img class="footer-icon" src="img/linkedin.svg" alt="linkedin">
       </a>
 
       <a href="https://www.behance.net/sabrinacamaril" target="_blank">
-        <img class="footer-icon" img src="img/behance.svg" alt="behance">
+        <img class="footer-icon" src="img/behance.svg" alt="behance">
       </a>
     </div>
     <!-- Contact-->
@@ -127,9 +131,10 @@
     </div>
   </footer>
   <!-- END FOOTER -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQkLNFfOU91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" 
+        crossorigin="anonymous">
+</script>
 </body>
 
 </html>
