@@ -127,7 +127,7 @@ a:focus {
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #d7a9b9;
-  color: #5c4630; /* needed to override the default link color */
+  color: #58432E; /* needed to override the default link color */
   font-size: 16;
   font-weight: 400;
   text-decoration: none;
@@ -193,7 +193,7 @@ nav > ul {
 }
 
 nav > ul > li {
-margin: 10px 0;
+  margin: 10px 0;
 }
 
 nav > ul > li > a {
@@ -334,7 +334,7 @@ footer {
 }
 
 .container h2 {
-  color: #d7a9b9;
+  color: #5c4630;
   text-decoration: none;
 }
 
