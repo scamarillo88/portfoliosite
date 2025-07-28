@@ -1,15 +1,16 @@
 console.log("Hi there! I'm Sabrina, baking sweet designs from scratch - thanks for visiting my portfolio!");
 
+// ==== MENU TOGGLE FOR HAMBURGER NAV ====
 function menuToggle() {
-    const x = document.getElementById('myNavtoggle');
-  if (x.className === 'navtoggle') {
-    x.className += ' responsive';
-  } else {
-    x.className = 'navtoggle';
-  }
+  const navToggle = document.getElementById("myNavtoggle");
+  navToggle.classList.toggle("responsive");
+  document.body.classList.toggle("nav-open");
 }
 
+// ==== MOBILE TABLE OF CONTENTS TOGGLE ====
 function toggleMobileTOC() {
-  const panel = document.getElementById('mobile-toc-panel');
-  panel.classList.toggle('open');
+  const mobileTOCPanel = document.getElementById("mobile-toc-panel");
+  mobileTOCPanel.classList.toggle("open");
+  document.body.classList.toggle("nav-open");
 }
+
