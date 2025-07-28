@@ -373,7 +373,74 @@ footer {
   border-bottom: 1px solid #4a4a4a;
 } 
 
+/* === Mobile TOC Styles === */
+.mobile-toc-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  display: none;
+}
 
+.mobile-toc-button button {
+  background-color: #5c4630;
+  color: white;
+  border: none;
+  padding: 12px 14px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.mobile-toc-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  background-color: #fdf9f4;
+  z-index: 998;
+  padding: 20px;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.mobile-toc-panel.open {
+  transform: translateX(0%);
+}
+
+.mobile-toc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mobile-toc-panel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-toc-panel li {
+  margin: 15px 0;
+}
+
+.mobile-toc-panel a {
+  font-size: 1em;
+  text-decoration: none;
+  color: #5c4630;
+}
+
+.mobile-toc-panel a:hover {
+  color: #a0db5d;
+}
+
+/* Show the mobile TOC button by default (mobile) */
+.mobile-toc-button {
+  display: block;
+}
 
 /* Media */
 @media only screen and (min-width: 640px) {
@@ -443,6 +510,17 @@ footer {
    #about-page h3 { 
     margin-top: 0;
    }
+
+  #table-of-contents {
+    display: none;
+   }
+  
+   .mobile-toc-button {
+    display: none;
+   }
+   #mobile-toc-panel {
+    display: none;
+   }
   }  
 /* Medium screen mobile.tablet*/
 
@@ -497,6 +575,66 @@ footer {
 
   #about {
     padding-top: 40px;
+  }
+
+  .toc-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  #table-of-contents {
+    display: block;
+    flex: 0 0 250px;
+    position: sticky;
+    top: 200px; /* adjust based on your header height */
+    height: fit-content;
+    background-color: #fdf9f4;
+    padding: 20px;
+    border-left: 4px solid #d7a9b9;
+  }
+
+  #table-of-contents h2 {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+
+  #table-of-contents ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  #table-of-contents li {
+    margin-bottom: 10px;
+  }
+
+  #table-of-contents a {
+    color: #5c4630;
+    font-size: 1em;
+    text-decoration: none;
+  }
+
+  #table-of-contents a:hover {
+    color: #a0db5d;
+    text-decoration: underline;
+  }
+
+  .toc-content {
+    flex: 1;
+  }
+
+    .mobile-toc-button {
+    display: none;
+  }
+
+  #table-of-contents {
+    display: block;
+  }
+
+  #mobile-toc-panel {
+    display: none;
   }
 }
 
