@@ -8,3 +8,8 @@ function menuToggle() {
     x.className = 'navtoggle';
   }
 }
+
+function toggleMobileTOC() {
+  const panel = document.getElementById('mobile-toc-panel');
+  panel.classList.toggle('open');
+}
