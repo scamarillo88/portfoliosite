@@ -363,6 +363,15 @@ footer {
   margin: 4px;
 }
 
+#table-of-contents {
+border-left: 3px solid #d7a9b9;
+padding: 20px;
+border-radius: 8px;
+font-size: 0.95em;
+background-color: #fdf9f4;
+box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
 #table-of-contents h2 {
   text-decoration: underline;
 }
