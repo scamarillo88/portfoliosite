@@ -49,155 +49,129 @@
 
   <!-- Main -->
   <main id="thryve-case-study">
-    <div class="container">
-      <!-- open row that holds (2) columns for project -->
-      <div>
-        <!-- open first column (used for image)-->
-        <picture>
-          <source srcset="./img/thryve/1x/thryvetitle.jpg" media="(max-width:767px)">
-          <img src="./img/thryve/2x/thryvetitle2.jpg" alt="Thryve title">
-        </picture>
-      </div>
-      <div id="table-of-contents">
+    <div class="container toc-layout">
+      <!-- SIDEBAR: Sticky Table of Contents (desktop only) -->
+      <aside id="table-of-contents">
         <h2>Table of Contents</h2>
         <ul>
-          <li><a href="#timeline">Timeline</a></li><!--menu link-->
-          <li><a href="#vision-and-user-research">Vision and User Research</a></li><!--menu link-->
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#vision-and-user-research">Vision and User Research</a></li>
           <li><a href="#user-flow-and-low-fidelity-wireframes">User Flow and Low Fidelity Wireframes</a></li>
-          <!--menu link-->
-          <li><a href="#mid-fidelity-wireframes">Mid Fidelity Wireframes</a></li><!--menu link-->
-          <li><a href="#testing-and-brand-persona">Testing and Brand Persona</a></li><!--menu link-->
-          <li><a href="#style-guide">Style Guide</a></li><!--menu link-->
-          <li><a href="#high-fidelity-wireframes">High Fidelity Wireframes</a></li><!--menu link-->
+          <li><a href="#mid-fidelity-wireframes">Mid Fidelity Wireframes</a></li>
+          <li><a href="#testing-and-brand-persona">Testing and Brand Persona</a></li>
+          <li><a href="#style-guide">Style Guide</a></li>
+          <li><a href="#high-fidelity-wireframes">High Fidelity Wireframes</a></li>
         </ul>
-      </div>
+      </aside>
 
-      <div>
-        <div id="timeline">
-          <h2>Timeline</h2>
-          <h3>Process</h3>
-          <p>For this project, I followed a full design process—starting with user research and early sketches, then
-            building out wireframes, testing, and refining the UI. My goal was to create something clear,
-            approachable, and useful for everyday financial habits.</p>
-          <picture>
-            <source srcset="./img/thryve/1x/thryvetimeline.jpg" media="(max-width:767px)">
-            <img src="./img/thryve/2x/thryvetimeline2.jpg" alt="Thryve Timeline">
-          </picture>
+      <!-- MAIN CONTENT -->
+      <div class="toc-content">
+        <!-- MOBILE TOC: Hamburger Button -->
+        <div class="mobile-toc-button">
+          <button onclick="toggleMobileTOC()" aria-label="Open Table of Contents">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-        <div>
-          <span><a href="#table-of-contents">Back to Table of Contents</a></span>
-        </div>
-      </div>
 
-      <div>
-        <div id="vision-and-user-research">
-          <h2>Vision and User Research</h2>
-          <h3>Research</h3>
-          <p>I focused on users like young professionals and freelancers who wanted to feel more in control of their
-            money. The research showed a strong need for something simple that helps people track their spending and
-            save toward goals—without stress or confusion.</p>
+        <!-- MOBILE TOC: Slide-in Panel -->
+        <div id="mobile-toc-panel" class="mobile-toc-panel">
+          <div class="mobile-toc-header">
+            <h2>Table of Contents</h2>
+            <button onclick="toggleMobileTOC()" aria-label="Close Table of Contents">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <ul>
+            <li><a href="#timeline" onclick="toggleMobileTOC()">Timeline</a></li>
+            <li><a href="#vision-and-user-research" onclick="toggleMobileTOC()">Vision and User Research</a></li>
+            <li><a href="#user-flow-and-low-fidelity-wireframes" onclick="toggleMobileTOC()">User Flow and Low Fidelity
+                Wireframes</a></li>
+            <li><a href="#mid-fidelity-wireframes" onclick="toggleMobileTOC()">Mid Fidelity Wireframes</a></li>
+            <li><a href="#testing-and-brand-persona" onclick="toggleMobileTOC()">Testing and Brand Persona</a></li>
+            <li><a href="#style-guide" onclick="toggleMobileTOC()">Style Guide</a></li>
+            <li><a href="#high-fidelity-wireframes" onclick="toggleMobileTOC()">High Fidelity Wireframes</a></li>
+          </ul>
+        </div>
+        <!-- Main Project Content -->
+        <div class="toc-content">
           <picture>
-            <source srcset="./img/thryve/1x/thryveresearch.jpg" media="(max-width:767px)">
-            <img src="./img/thryve/2x/thryvemidfid2.jpg" alt="Thryve Research">
+            <source srcset="./img/thryve/1x/thryvetitle.jpg" media="(max-width:767px)">
+            <img src="./img/thryve/2x/thryvetitle2.jpg" alt="Thryve title">
           </picture>
-        </div>
-        <div>
-          <span><a href="#table-of-contents">Back to Table of Contents</a></span>
-        </div>
-      </div>
 
-      <div>
-        <div id="user-flow-and-low-fidelity-wireframes">
-          <h2>Userflow and Low Fidelity Wireframes</h2>
-          <h3>Ideation</h3>
-          <p>I started sketching out features that would make the experience feel encouraging and easy to follow.
-            Goal-based savings, visual progress tracking, and helpful tips were core ideas from the beginning.</p>
-          <picture>
-            <source srcset="./img/thryve/1x/thryvelofid.jpg" media="(max-width:767px)">
-            <img src="./img/thryve/2x/thryvelofid2.jpg" alt="userflow and low Fid wireframes">
-          </picture>
-        </div>
-        <div>
-          <span><a href="#table-of-contents">Back to Table of Contents</a></span>
-        </div>
-      </div>
+          <div id="timeline">
+            <h2>Timeline</h2>
+            <h3>Process</h3>
+            <p>For this project, I followed a full design process—starting with user research and early sketches...</p>
+            <picture>
+              <source srcset="./img/thryve/1x/thryvetimeline.jpg" media="(max-width:767px)">
+              <img src="./img/thryve/2x/thryvetimeline2.jpg" alt="Thryve Timeline">
+            </picture>
+          </div>
 
-      <div>
-        <div id="mid-fidelity-wireframes">
-          <h2>Mid Fidelity Wireframes</h2>
-          <h3>Wireframes</h3>
-          <p>I created low- and mid-fidelity wireframes to map out the app’s main features—like the dashboard,
-            savings
-            goals, and expenses. I made updates based on feedback, including layout tweaks, icon changes, and
-            spacing
-            improvements for better clarity.</p>
-          <picture>
-            <source srcset="./img/thryve/1x/thryvemidfid.jpg" media="(max-width:767px)">
-            <img src="./img/thryve/2x/thryvemidfid2.jpg" alt="Mid Fidelity Wireframes">
-          </picture>
-        </div>
-        <div>
-          <span><a href="#table-of-contents">Back to Table of Contents</a></span>
-        </div>
-      </div>
+          <div id="vision-and-user-research">
+            <h2>Vision and User Research</h2>
+            <h3>Research</h3>
+            <p>I focused on users like young professionals and freelancers...</p>
+            <picture>
+              <source srcset="./img/thryve/1x/thryveresearch.jpg" media="(max-width:767px)">
+              <img src="./img/thryve/2x/thryvemidfid2.jpg" alt="Thryve Research">
+            </picture>
+          </div>
 
-      <div>
-        <div id="testing-and-brand-persona">
-          <h2>Testing and Brand Persona</h2>
-          <h3>Prototype</h3>
-          <p>I built a clickable prototype so users could walk through key actions like adding a goal or logging
-            expenses. Feedback helped guide changes like button sizing, text updates, and adjusting the
-            navigation to
-            feel more natural.</p>
-          <a href="files/thryvebrandguide.pdf" target="Blank"> View Brand Guide </a>
-          <picture>
-            <source srcset="./img/thryve/1x/thryvemidtesting.jpg" media="(max-width:767px)">
-            <img src="./img/thryve/2x/thryvemidtesting2.jpg" alt="User Testing and Brand Persona">
-          </picture>
-        </div>
-        <div>
-          <span><a href="#table-of-contents">Back to Table of Contents</a></span>
-        </div>
-      </div>
+          <div id="user-flow-and-low-fidelity-wireframes">
+            <h2>Userflow and Low Fidelity Wireframes</h2>
+            <h3>Ideation</h3>
+            <p>I started sketching out features that would make the experience feel encouraging and easy to follow...
+            </p>
+            <picture>
+              <source srcset="./img/thryve/1x/thryvelofid.jpg" media="(max-width:767px)">
+              <img src="./img/thryve/2x/thryvelofid2.jpg" alt="Userflow and low Fid wireframes">
+            </picture>
+          </div>
 
-      <div>
-        <div id="style-guide">
-          <h2>Style Guide</h2>
-          <h3>Design</h3>
-          <p>The visual style is soft, clean, and supportive. I used a green primary color to reflect growth
-            and
-            guidance, paired with Poppins for a modern, easy-to-read look. The brand is meant to feel friendly
-            but
-            still professional.</p>
-          <picture>
-            <source srcset="./img/thryve/1x/thryvestyleguide.jpg" media="(max-width:767px)">
-            <img src="./img/thryve/2x/thryvestyleguide2.jpg" alt="Style Guide">
-          </picture>
-        </div>
-        <div>
-          <span><a href="#table-of-contents">Back to Table of Contents</a></span>
-        </div>
-      </div>
+          <div id="mid-fidelity-wireframes">
+            <h2>Mid Fidelity Wireframes</h2>
+            <h3>Wireframes</h3>
+            <p>I created low- and mid-fidelity wireframes to map out the app’s main features...</p>
+            <picture>
+              <source srcset="./img/thryve/1x/thryvemidfid.jpg" media="(max-width:767px)">
+              <img src="./img/thryve/2x/thryvemidfid2.jpg" alt="Mid Fidelity Wireframes">
+            </picture>
+          </div>
 
-      <div>
-        <div id="high-fidelity-wireframes">
-          <h2>High Fidelity Wireframes</h2>
-          <h3>Conclusion</h3>
-          <p>Thryve is about making saving feel possible. It breaks things down into simple steps so people
-            can make
-            smart money choices without getting overwhelmed. It’s built to support real goals—like that trip
-            you’ve
-            been planning or the emergency fund you’ve been putting off.</p>
-          <picture>
-            <source srcset="./img/thryve/1x/thryvehifid.jpg" media="(max-width:767px)">
-            <img src="./img/thryve/2x/thryvehifid2.jpg" alt="High Fidelity Wireframes">
-          </picture>
-        </div>
-        <div>
-          <span><a href="#table-of-contents">Back to Table of Contents</a></span>
+          <div id="testing-and-brand-persona">
+            <h2>Testing and Brand Persona</h2>
+            <h3>Prototype</h3>
+            <p>I built a clickable prototype so users could walk through key actions...</p>
+            <a href="files/thryvebrandguide.pdf" target="_blank">View Brand Guide</a>
+            <picture>
+              <source srcset="./img/thryve/1x/thryvemidtesting.jpg" media="(max-width:767px)">
+              <img src="./img/thryve/2x/thryvemidtesting2.jpg" alt="User Testing and Brand Persona">
+            </picture>
+          </div>
+
+          <div id="style-guide">
+            <h2>Style Guide</h2>
+            <h3>Design</h3>
+            <p>The visual style is soft, clean, and supportive...</p>
+            <picture>
+              <source srcset="./img/thryve/1x/thryvestyleguide.jpg" media="(max-width:767px)">
+              <img src="./img/thryve/2x/thryvestyleguide2.jpg" alt="Style Guide">
+            </picture>
+          </div>
+
+          <div id="high-fidelity-wireframes">
+            <h2>High Fidelity Wireframes</h2>
+            <h3>Conclusion</h3>
+            <p>Thryve is about making saving feel possible...</p>
+            <picture>
+              <source srcset="./img/thryve/1x/thryvehifid.jpg" media="(max-width:767px)">
+              <img src="./img/thryve/2x/thryvehifid2.jpg" alt="High Fidelity Wireframes">
+            </picture>
+          </div>
         </div>
       </div>
-    </div>
   </main>
   <!-- END Main -->
 
@@ -230,8 +204,9 @@
     </div>
   </footer>
   <!-- END FOOTER -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
