@@ -49,29 +49,28 @@
   <!-- Main -->
 
   <main id="scientifically-sweet-case-study">
-    <div class="container">
-      <!-- open row that holds (2) columns for project -->
-      <div>
-        <!-- open first column (used for image)-->
-        <picture>
-          <source srcset="./img/scientifically-sweet/1x/sstitle1.jpg" media="(max-width:767px)">
-          <img src="./img/scientifically-sweet/2x/sstitle2.jpg" alt="Scientifically Sweet title">
-        </picture>
-      </div>
-        <div id="table-of-contents">
-          <h2>Table of contents</h2>
-          <ul>
-            <li><a href="#timeline">Timeline</a></li><!--menu link-->
-            <li><a href="#personas">Personas</a></li><!--menu link-->
-            <li><a href="#user-flow">User Flow</a></li><!--menu link-->
-            <li><a href="#low-fidelity-wireframes-and-user-response">Low Fidelity Wireframes and User Response</a>
-            </li><!--menu link-->
-            <li><a href="#style-guide">Style Guide</a></li><!--menu link-->
-            <li><a href="#preference-testing">Preference Testing</a></li><!--menu link-->
-            <li><a href="#high-fidelity-wireframes">High Fidelity Wireframes</a></li><!--menu link-->
-          </ul>
-        </div>
-
+  <button class="toc-toggle" aria-label="Toggle Table of Contents" onclick="toggleTOC()">
+    <span class="hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  </button>
+  <div class="content-wrapper">
+  <nav id="table-of-contents">
+    <h2>Table of contents</h2>
+    <ul>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#personas">Personas</a></li>
+      <li><a href="#user-flow">User Flow</a></li>
+      <li><a href="#low-fidelity-wireframes-and-user-response">Low Fidelity Wireframes and User Response</a></li>
+      <li><a href="#style-guide">Style Guide</a></li>
+      <li><a href="#preference-testing">Preference Testing</a></li>
+      <li><a href="#high-fidelity-wireframes">High Fidelity Wireframes</a></li>
+    </ul>
+  </nav>
+  <div class="main-container">
+  <div>
         <div>
           <div id="timeline">
             <h2>Timeline</h2>
@@ -83,9 +82,6 @@
               <source srcset="./img/scientifically-sweet/1x/sstimeline1.jpg" media="(max-width:767px)">
               <img src="./img/scientifically-sweet/2x/sstimeline2.jpg" alt="Scientifically Sweet Timeline">
             </picture>
-          </div>
-          <div>
-            <span><a href="#table-of-contents">Table of Contents</a></span>
           </div>
         </div>
 
@@ -100,9 +96,6 @@
               <img src="./img/scientifically-sweet/2x/sspersona2.jpg" alt="Scientifically Sweet personas">
             </picture>
           </div>
-          <div>
-            <span><a href="#table-of-contents">Back to Table of Contents</a></span>
-          </div>
         </div>
 
         <div>
@@ -115,9 +108,6 @@
               <source srcset="./img/scientifically-sweet/1x/ssuserflow1.jpg" media="(max-width:767px)">
               <img src="./img/scientifically-sweet/2x/ssuserflow2.jpg" alt="userflow">
             </picture>
-          </div>
-          <div>
-            <span><a href="#table-of-contents">Back to Table of Contents</a></span>
           </div>
         </div>
 
@@ -132,9 +122,6 @@
               <img src="./img/scientifically-sweet/2x/sslowfid2.jpg" alt="Low Fidelity Wireframes and User Testing">
             </picture>
           </div>
-          <div>
-            <span><a href="#table-of-contents">Back to Table of Contents</a></span>
-          </div>
         </div>
 
         <div>
@@ -148,9 +135,6 @@
               <img src="./img/scientifically-sweet/2x/ssstyleguide2.jpg" alt="Style Guide">
             </picture>
           </div>
-          <div>
-            <span><a href="#table-of-contents">Back to Table of Contents</a></span>
-          </div>
         </div>
 
         <div>
@@ -163,9 +147,6 @@
               <source srcset="./img/scientifically-sweet/1x/sspreferencetesting1.jpg" media="(max-width:767px)">
               <img src="./img/scientifically-sweet/2x/sspreferencetesting2.jpg" alt="Preference Testing">
             </picture>
-          </div>
-          <div>
-            <span><a href="#table-of-contents">Back to Table of Contents</a></span>
           </div>
         </div>
 
@@ -181,42 +162,42 @@
               <img src="./img/scientifically-sweet/2x/sshighfid2.jpg" alt="High Fidelity Wireframes">
             </picture>
           </div>
-          <div>
-            <span><a href="#table-of-contents">Back to Table of Contents</a></span>
-          </div>
         </div>
     </div>
+  </div>
+  </div>
   </main>
   <!-- END Main -->
 
-  <!-- Contact-->
-
-  <footer id="contact" class="contact">
-    <div class="footercontainer">
-      <h2>Let's Connect</h2>    
-      <p>I’m currently open to freelance, remote, and full-time roles in UI, UX, or Product Design. Whether you have a project in mind, want to collaborate, or just want to say hi—drop me a message. I’d love to hear from you!</p>
-      <p>Location: Bend, Oregon</p>      
-      <span><a href="tel:503-867-4439"> Call Me</a></span>
-      <div>
-        <a href="mailto:sabrina.camarillo88@gmail.com" class="button contact">Email Me</a>
+    <!-- Contact-->
+  <footer class="custom-footer" id="contact">
+    <div class="footer-message">
+      <h2>Let's Connect</h2>
+      <p>
+        I’m currently open to freelance, remote, and full-time roles in UI, UX, or Product Design.
+        Whether you have a project in mind, want to collaborate, or just want to say hi—
+        <span class="highlight">drop me a message</span>. I’d love to hear from you!
+      </p>
+      <p class="footer-location">📍 Bend, Oregon</p>
+      <div class="footer-buttons">
+        <a class="footer-call" href="tel:503-867-4439">Call Me</a>
+        <a class="footer-email" href="mailto:sabrina.camarillo88@gmail.com">Email Me</a>
+      </div>
+      <div class="footer-social-icons">
+        <a aria-label="LinkedIn" href="https://www.linkedin.com/in/sabrina-camarillo/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a aria-label="Behance" href="https://www.behance.net/sabrinacamaril" target="_blank">
+          <i class="fab fa-behance"></i>
+        </a>
       </div>
     </div>
-    <!-- Social Media Layout and Placeholders-->
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/sabrina-camarillo/" target="_blank">
-        <img class="footer-icon" src="img/linkedin.svg" alt="linkedin">
-      </a>
-
-      <a href="https://www.behance.net/sabrinacamaril" target="_blank">
-        <img class="footer-icon" src="img/behance.svg" alt="behance">
-      </a>
-    </div>
-    <!-- Contact-->
-    <div>
-      <p>COPYRIGHT Sabrina Camarillo 2025</p>
+    <div class="footer-bottom-note">
+      <p>© 2025 Sabrina Camarillo</p>
     </div>
   </footer>
   <!-- END FOOTER -->
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 </body>
