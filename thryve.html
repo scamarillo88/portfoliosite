@@ -49,131 +49,127 @@
   <!-- END OF HEADER -->
 
   <!-- Main -->
-  <main id="thryve-case-study">
-    <div class="container toc-layout">
-      <!-- SIDEBAR: Sticky Table of Contents (desktop only) -->
-      <aside id="table-of-contents">
-        <h2>Table of Contents</h2>
-        <ul>
-          <li><a href="#timeline">Timeline</a></li>
-          <li><a href="#vision-and-user-research">Vision and User Research</a></li>
-          <li><a href="#user-flow-and-low-fidelity-wireframes">User Flow and Low Fidelity Wireframes</a></li>
-          <li><a href="#mid-fidelity-wireframes">Mid Fidelity Wireframes</a></li>
-          <li><a href="#testing-and-brand-persona">Testing and Brand Persona</a></li>
-          <li><a href="#style-guide">Style Guide</a></li>
-          <li><a href="#high-fidelity-wireframes">High Fidelity Wireframes</a></li>
-        </ul>
-      </aside>
-  
-      <!-- MAIN CONTENT -->
-      <div class="toc-content">
-        <!-- MOBILE TOC: Hamburger Button -->
-        <div class="mobile-toc-button">
-          <button aria-label="Open Table of Contents" onclick="toggleMobileTOC()">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-  
-        <!-- MOBILE TOC: Slide-in Panel -->
-        <div class="mobile-toc-panel" id="mobile-toc-panel">
-          <div class="mobile-toc-header">
-            <h2>Table of Contents</h2>
-            <button aria-label="Close Table of Contents" onclick="toggleMobileTOC()">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-          <ul>
-            <li><a href="#timeline" onclick="toggleMobileTOC()">Timeline</a></li>
-            <li><a href="#vision-and-user-research" onclick="toggleMobileTOC()">Vision and User Research</a></li>
-            <li><a href="#user-flow-and-low-fidelity-wireframes" onclick="toggleMobileTOC()">User Flow and Low Fidelity
-                Wireframes</a></li>
-            <li><a href="#mid-fidelity-wireframes" onclick="toggleMobileTOC()">Mid Fidelity Wireframes</a></li>
-            <li><a href="#testing-and-brand-persona" onclick="toggleMobileTOC()">Testing and Brand Persona</a></li>
-            <li><a href="#style-guide" onclick="toggleMobileTOC()">Style Guide</a></li>
-            <li><a href="#high-fidelity-wireframes" onclick="toggleMobileTOC()">High Fidelity Wireframes</a></li>
-          </ul>
-        </div>
+<main id="thryve-case-study">
+<button class="toc-toggle" aria-label="Toggle Table of Contents" onclick="toggleTOC()">
+    <span class="hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+</button>
+
+<div class="content-wrapper">
+ <nav id="table-of-contents">
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#vision-and-user-research">Vision & Research</a></li>
+        <li><a href="#user-flow-and-low-fidelity-wireframes">User Flow</a></li>
+        <li><a href="#mid-fidelity-wireframes">Wireframes</a></li>
+        <li><a href="#branding">Branding</a></li>
+        <li><a href="#style-guide">Style Guide</a></li>
+        <li><a href="#final-prototype">Final Prototype</a></li>
+      </ul>
+ </nav>
+ <div class="container">
+  <div class="main-container">
+   <div>
         <!-- Main Project Content -->
-         
+      <div>
+        <picture>
+          <source media="(max-width:767px)" srcset="./img/thryve/1x/thryvetitle.jpg" />
+          <img alt="Thryve title" src="./img/thryve/2x/thryvetitle2.jpg" />
+        </picture>
+      </div>
+      <div>
+        <div id="timeline">
+          <h2>Timeline</h2>
+          <h3>Process</h3>
+          <p>For this project, I followed a full design process—starting with user research and early sketches...</p>
           <picture>
-            <source media="(max-width:767px)" srcset="./img/thryve/1x/thryvetitle.jpg" />
-            <img alt="Thryve title" src="./img/thryve/2x/thryvetitle2.jpg" />
+            <source media="(max-width:767px)" srcset="./img/thryve/1x/thryvetimeline.jpg" />
+            <img alt="Thryve Timeline" src="./img/thryve/2x/thryvetimeline2.jpg" />
           </picture>
+        </div>
+      </div>
 
-          <div id="timeline">
-            <h2>Timeline</h2>
-            <h3>Process</h3>
-            <p>For this project, I followed a full design process—starting with user research and early sketches...</p>
-            <picture>
-              <source media="(max-width:767px)" srcset="./img/thryve/1x/thryvetimeline.jpg" />
-              <img alt="Thryve Timeline" src="./img/thryve/2x/thryvetimeline2.jpg" />
-            </picture>
-          </div>
+      <div>
+        <div id="vision-and-user-research">
+          <h2>Vision and User Research</h2>
+          <h3>Research</h3>
+          <p>I focused on users like young professionals and freelancers...</p>
+          <picture>
+            <source media="(max-width:767px)" srcset="./img/thryve/1x/thryveresearch.jpg" />
+            <img alt="Thryve Research" src="./img/thryve/2x/thryvemidfid2.jpg" />
+          </picture>
+        </div>
+      </div>
 
-          <div id="vision-and-user-research">
-            <h2>Vision and User Research</h2>
-            <h3>Research</h3>
-            <p>I focused on users like young professionals and freelancers...</p>
-            <picture>
-              <source media="(max-width:767px)" srcset="./img/thryve/1x/thryveresearch.jpg" />
-              <img alt="Thryve Research" src="./img/thryve/2x/thryvemidfid2.jpg" />
-            </picture>
-          </div>
+      <div>
+        <div id="user-flow-and-low-fidelity-wireframes">
+          <h2>Userflow and Low Fidelity Wireframes</h2>
+          <h3>Ideation</h3>
+          <p>I started sketching out features that would make the experience feel encouraging and easy to follow...
+          </p>
+          <picture>
+            <source media="(max-width:767px)" srcset="./img/thryve/1x/thryvelofid.jpg" />
+            <img alt="Userflow and low Fid wireframes" src="./img/thryve/2x/thryvelofid2.jpg" />
+          </picture>
+        </div>
+      </div>
 
-          <div id="user-flow-and-low-fidelity-wireframes">
-            <h2>Userflow and Low Fidelity Wireframes</h2>
-            <h3>Ideation</h3>
-            <p>I started sketching out features that would make the experience feel encouraging and easy to follow...
-            </p>
-            <picture>
-              <source media="(max-width:767px)" srcset="./img/thryve/1x/thryvelofid.jpg" />
-              <img alt="Userflow and low Fid wireframes" src="./img/thryve/2x/thryvelofid2.jpg" />
-            </picture>
-          </div>
+      <div>
+        <div id="mid-fidelity-wireframes">
+          <h2>Mid Fidelity Wireframes</h2>
+          <h3>Wireframes</h3>
+          <p>I created low- and mid-fidelity wireframes to map out the app’s main features...</p>
+          <picture>
+            <source media="(max-width:767px)" srcset="./img/thryve/1x/thryvemidfid.jpg" />
+            <img alt="Mid Fidelity Wireframes" src="./img/thryve/2x/thryvemidfid2.jpg" />
+          </picture>
+        </div>
+      </div>
 
-          <div id="mid-fidelity-wireframes">
-            <h2>Mid Fidelity Wireframes</h2>
-            <h3>Wireframes</h3>
-            <p>I created low- and mid-fidelity wireframes to map out the app’s main features...</p>
-            <picture>
-              <source media="(max-width:767px)" srcset="./img/thryve/1x/thryvemidfid.jpg" />
-              <img alt="Mid Fidelity Wireframes" src="./img/thryve/2x/thryvemidfid2.jpg" />
-            </picture>
-          </div>
+      <div>
+        <div id="testing-and-brand-persona">
+          <h2>Testing and Brand Persona</h2>
+          <h3>Prototype</h3>
+          <p>I built a clickable prototype so users could walk through key actions...</p>
+          <a href="files/thryvebrandguide.pdf" target="_blank">View Brand Guide</a>
+          <picture>
+            <source media="(max-width:767px)" srcset="./img/thryve/1x/thryvemidtesting.jpg" />
+            <img alt="User Testing and Brand Persona" src="./img/thryve/2x/thryvemidtesting2.jpg" />
+          </picture>
+        </div>
+      </div>
 
-          <div id="testing-and-brand-persona">
-            <h2>Testing and Brand Persona</h2>
-            <h3>Prototype</h3>
-            <p>I built a clickable prototype so users could walk through key actions...</p>
-            <a href="files/thryvebrandguide.pdf" target="_blank">View Brand Guide</a>
-            <picture>
-              <source media="(max-width:767px)" srcset="./img/thryve/1x/thryvemidtesting.jpg" />
-              <img alt="User Testing and Brand Persona" src="./img/thryve/2x/thryvemidtesting2.jpg" />
-            </picture>
-          </div>
+      <div>  
+        <div id="style-guide">
+          <h2>Style Guide</h2>
+          <h3>Design</h3>
+          <p>The visual style is soft, clean, and supportive...</p>
+          <picture>
+            <source media="(max-width:767px)" srcset="./img/thryve/1x/thryvestyleguide.jpg" />
+            <img alt="Style Guide" src="./img/thryve/2x/thryvestyleguide2.jpg" />
+          </picture>
+        </div>
+      </div>
 
-          <div id="style-guide">
-            <h2>Style Guide</h2>
-            <h3>Design</h3>
-            <p>The visual style is soft, clean, and supportive...</p>
-            <picture>
-              <source media="(max-width:767px)" srcset="./img/thryve/1x/thryvestyleguide.jpg" />
-              <img alt="Style Guide" src="./img/thryve/2x/thryvestyleguide2.jpg" />
-            </picture>
-          </div>
-
-          <div id="high-fidelity-wireframes">
-            <h2>High Fidelity Wireframes</h2>
-            <h3>Conclusion</h3>
-            <p>Thryve is about making saving feel possible...</p>
-            <picture>
-              <source media="(max-width:767px)" srcset="./img/thryve/1x/thryvehifid.jpg" />
-              <img alt="High Fidelity Wireframes" src="./img/thryve/2x/thryvehifid2.jpg" />
-            </picture>
-          </div>
+      <div>
+        <div id="high-fidelity-wireframes">
+          <h2>High Fidelity Wireframes</h2>
+          <h3>Conclusion</h3>
+          <p>Thryve is about making saving feel possible...</p>
+          <picture>
+            <source media="(max-width:767px)" srcset="./img/thryve/1x/thryvehifid.jpg" />
+            <img alt="High Fidelity Wireframes" src="./img/thryve/2x/thryvehifid2.jpg" />
+          </picture>
         </div>
       </div>
     </div>
+  </div>
+ </div>
+ </div>
   </main>
   <!-- END Main -->
 
@@ -205,9 +201,9 @@
     </div>
   </footer>
   <!-- END FOOTER -->
-  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="js/scripts.js"></script>
-  </body>
-  
-  </html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+</body>
+
+</html>
