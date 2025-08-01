@@ -457,7 +457,6 @@ display: none;
   border-bottom: 1px solid #4a4a4a;
 } 
 
-/* === Mobile TOC Styles === */
 .mobile-toc-button {
   position: fixed;
   bottom: 20px;
@@ -477,7 +476,6 @@ display: none;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.mobile-toc-panel {
   position: fixed;
   top: 0;
   right: 0;
@@ -491,42 +489,34 @@ display: none;
   transition: transform 0.3s ease;
 }
 
-.mobile-toc-panel.open {
   transform: translateX(0%);
 }
 
-.mobile-toc-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.mobile-toc-panel ul {
   list-style: none;
   padding: 0;
 }
 
-.mobile-toc-panel li {
   margin: 15px 0;
 }
 
-.mobile-toc-panel a {
   font-size: 1em;
   text-decoration: none;
   color: #5c4630;
 }
 
-.mobile-toc-panel a:hover {
   color: #a0db5d;
 }
 
-/* Show the mobile TOC button by default (mobile) */
 .mobile-toc-button {
   display: block;
 }
 
-body.nav-open {
   overflow: hidden;
 }
 
@@ -607,22 +597,6 @@ body.nav-open {
     margin-top: 0;
    }
 
-  #table-of-contents {
-    display: none;
-   }
-  
-   .mobile-toc-button {
-    display: none;
-   }
-   #mobile-toc-panel {
-    display: none;
-    width: 85%;
-   }
-   .toc-layout {
-    flex-direction: column;
-    gap: 2em;
-   }
-
    .page-title {
     margin-top: 20px;
    }
@@ -691,24 +665,8 @@ body.nav-open {
     padding-top: 40px;
   }
 
-  .toc-layout {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-  }
-
-  #table-of-contents {
-    display: block;
-    top: 200px;
-    flex: 0 0 250px;
-    position: sticky;
-    top: 200px; /* adjust based on your header height */
-    height: fit-content;
-    background-color: #fdf9f4;
-    padding: 20px;
-    border-left: 4px solid #d7a9b9;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    z-index: 1;
+  main > div:not(#table-of-contents) {
+    flex: 1;
   }
 
   #table-of-contents h2 {
@@ -738,21 +696,8 @@ body.nav-open {
     text-decoration: underline;
   }
 
-  .toc-content {
-    flex: 1;
-    min-width: 0;
-  }
-
-   .mobile-toc-button {
-    display: none;
-  }
-
   #table-of-contents {
     display: block;
-  }
-
-  #mobile-toc-panel {
-    display: none;
   }
 
   #about-page main {
