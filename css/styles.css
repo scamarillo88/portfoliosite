@@ -1,7 +1,7 @@
 /*
 Colors used:
 Background (whipped cream): #fdf9f4;
-Text/ headings (epresso): #5c4630;
+Text/ headings (espresso): #5c4630;
 Accent/ Buttons(lemon zest): #f7d488;
 Hover state/ Icons (Mint Leaf): #a0db5d;
 Subtle Highlights (Berry Glaze): #d7a9b9;
@@ -69,11 +69,6 @@ p {
   line-height: 1.8;
 }
 
-section {
-  padding: 100px 0;
-  border-bottom: 2px solid #d7a9b9;
-}
-
 #hero {
   background-color: #f7d488;
   padding: 0;
@@ -99,7 +94,7 @@ nav a, .button, .footer-call, .footer-email {
 
 float-text img{
   float: left;
-  margin: 0 0.625em 0.625em 0
+  margin: 0 0.625em 0.625em 0;
 }
 
 ul {
@@ -127,15 +122,15 @@ img {
   display: block;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
- }
+}
 
  .project-main picture {
   margin-top: 100px;
   margin: 80px 0;
- }
+}
  /* css code for links*/
 
- a {
+a {
   color: #5c4630;
   text-decoration: underline; /* underlining */
 }
@@ -154,7 +149,7 @@ a:active { /* selected link */
   color: #f7d488;
 }
 
-/*pseudo class for accesssibility*/
+/*pseudo class for accessibility*/
 a:hover
 a:focus {
   color:#a0db5d;
@@ -197,7 +192,7 @@ a:focus {
   text-transform: uppercase;
   border: 2px solid #5c4630;
   margin-top: 15px; 
-  transition: background-color 0.3s ease, color, 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button.contact:hover {
@@ -320,7 +315,7 @@ nav > ul > li > a:focus {
   top: 2px;
   font-size: 20px;
   padding-right: 0;
- }
+}
 
 .main-image {
   float: left;
@@ -418,7 +413,7 @@ nav > ul > li > a:focus {
 /* layout styling*/
 
 .container {
-  padding: 20px 15px;
+  padding: 20px 20px;
   margin: auto;
   max-width: 1200px;
 }
@@ -672,7 +667,16 @@ body.nav-open {
 }
 
   .main {
-    padding-top: 300px;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .main-content {
+    flex: 1;
+  }
+
+  .main-container {
+    padding-left: 1.5rem;
   }
 
   .float-text {
@@ -816,3 +820,5 @@ body.nav-open {
     transform: translateY(0);
   }
  }
+
+
